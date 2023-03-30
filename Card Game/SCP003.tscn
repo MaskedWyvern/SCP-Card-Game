@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx0ghy2u2lfum"]
+
+[ext_resource type="Texture2D" uid="uid://krgs1yk4w7l8" path="res://003.png" id="1_2o2xk"]
+[ext_resource type="Script" path="res://icon.gd" id="2_pxqkv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aa0p"]
+size = Vector2(1445, 2038)
+
+[node name="SCP003" type="Sprite2D" groups=["Clicked"]]
+position = Vector2(606, 240)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource( "1_2o2xk" )
+script = ExtResource( "2_pxqkv" )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.499977, 0)
+shape = SubResource( "RectangleShape2D_5aa0p" )
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

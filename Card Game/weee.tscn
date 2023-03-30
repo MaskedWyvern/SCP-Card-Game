@@ -1,0 +1,23 @@
+[gd_scene load_steps=7 format=3 uid="uid://uwfysapc2ifp"]
+
+[ext_resource type="PackedScene" uid="uid://bef4u5gc6x2y" path="res://SCP002.tscn" id="1_g201x"]
+[ext_resource type="PackedScene" uid="uid://b22je27emtl3k" path="res://SCP0031.tscn" id="2_k1pdh"]
+[ext_resource type="PackedScene" uid="uid://dx0ghy2u2lfum" path="res://SCP003.tscn" id="3_uxhbd"]
+[ext_resource type="PackedScene" uid="uid://brv7hyt1pqwl5" path="res://SCP004.tscn" id="4_dgx3w"]
+[ext_resource type="PackedScene" uid="uid://bjmsd7u0kvu67" path="res://SCP0032.tscn" id="5_47ug6"]
+[ext_resource type="PackedScene" uid="uid://u6k0g3o10x2b" path="res://SCPCARD.tscn" id="6_raln0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="SCP002" parent="." instance=ExtResource( "1_g201x" )]
+position = Vector2(289, 123)
+
+[node name="SCP0031" parent="." instance=ExtResource( "2_k1pdh" )]
+
+[node name="SCP003" parent="." instance=ExtResource( "3_uxhbd" )]
+
+[node name="SCP004" parent="." instance=ExtResource( "4_dgx3w" )]
+
+[node name="SCP0032" parent="." instance=ExtResource( "5_47ug6" )]
+
+[node name="SCP005" parent="." instance=ExtResource( "6_raln0" )]

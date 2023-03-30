@@ -1,0 +1,84 @@
+[gd_scene load_steps=4 format=3 uid="uid://u6k0g3o10x2b"]
+
+[ext_resource type="Texture2D" uid="uid://dcrcbq2wfp674" path="res://cardtemplate.png" id="1_8fdv3"]
+[ext_resource type="Script" path="res://icon.gd" id="2_fa12y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5aa0p"]
+size = Vector2(1445, 2038)
+
+[node name="SCP005" type="Sprite2D" groups=["Clicked"]]
+position = Vector2(40, 266)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_8fdv3")
+script = ExtResource("2_fa12y")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_5aa0p")
+
+[node name="Name" type="Label" parent="."]
+offset_left = -640.0
+offset_top = -920.0
+offset_right = 620.0
+offset_bottom = -680.0
+theme_override_font_sizes/font_size = 100
+text = "SCP-XXXX"
+horizontal_alignment = 1
+
+[node name="Type" type="Label" parent="."]
+offset_left = -300.0
+offset_top = 80.0
+offset_right = 320.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 80
+text = "TYPE"
+horizontal_alignment = 1
+
+[node name="Cost" type="Label" parent="."]
+offset_left = -700.0
+offset_top = 780.0
+offset_right = -360.0
+offset_bottom = 920.0
+theme_override_font_sizes/font_size = 100
+text = "X"
+horizontal_alignment = 1
+
+[node name="Description" type="Label" parent="."]
+offset_left = -660.0
+offset_top = 220.0
+offset_right = 680.0
+offset_bottom = 780.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "DESCRIPTION
+"
+horizontal_alignment = 1
+autowrap_mode = 2
+text_overrun_behavior = 2
+
+[node name="Defense" type="Label" parent="."]
+offset_left = 500.0
+offset_top = 80.0
+offset_right = 680.0
+offset_bottom = 240.0
+theme_override_font_sizes/font_size = 100
+text = "x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Attack" type="Label" parent="."]
+offset_left = -680.0
+offset_top = 80.0
+offset_right = -480.0
+offset_bottom = 220.0
+theme_override_font_sizes/font_size = 100
+text = "x"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScriptHolder" type="Node2D" parent="."]
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

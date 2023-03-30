@@ -1,0 +1,69 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8nb08eyqsq8p"]
+
+[ext_resource type="Script" path="res://CARD.gd" id="1_bsh1f"]
+[ext_resource type="Texture2D" uid="uid://lypgpl80lqt7" path="res://002.png" id="2_73q8r"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( "1_bsh1f" )
+
+[node name="002" type="Sprite2D" parent="."]
+position = Vector2(403, 438)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource( "2_73q8r" )
+
+[node name="CARD" type="ColorRect" parent="."]
+offset_left = 292.0
+offset_top = 387.0
+offset_right = 364.0
+offset_bottom = 489.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Name" type="ColorRect" parent="CARD"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 69.0
+offset_bottom = 17.0
+color = Color(0.513726, 0.513726, 0.513726, 1)
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="ColorRect" parent="CARD"]
+offset_left = 4.0
+offset_top = 62.0
+offset_right = 69.0
+offset_bottom = 99.0
+color = Color(0.513726, 0.513726, 0.513726, 1)
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="ColorRect" parent="CARD"]
+offset_left = 20.0
+offset_top = 55.0
+offset_right = 53.0
+offset_bottom = 62.0
+color = Color(0.117647, 0.117647, 0.184314, 1)
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Cost" type="ColorRect" parent="CARD"]
+offset_left = 4.0
+offset_top = 90.0
+offset_right = 20.0
+offset_bottom = 99.0
+color = Color(0.117647, 0.117647, 0.184314, 1)
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextEdit" type="TextEdit" parent="."]
+offset_right = 85.0
+offset_bottom = 36.0
+text = "EEADASFS"
+__meta__ = {
+"_edit_use_anchors_": false
+}
